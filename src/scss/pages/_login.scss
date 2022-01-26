@@ -1,0 +1,20 @@
+.login{
+    height:100vh;
+    .form-area{
+        padding: 1.2rem;
+        h2{
+            text-align: center;
+        }
+        form{
+            input[type="email"], input[type="password"]{
+                @include input();
+            }
+            button[type="submit"]{
+                line-height: $line-height;
+                color: $white;
+                background-color:$my-primary;
+                font-size: 15px;
+            }
+        }
+    }
+}
