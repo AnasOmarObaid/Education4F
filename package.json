@@ -35,7 +35,11 @@
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^10.0.1",
-    "node-sass": "^7.0.1"
+    "mozjpeg": "^8.0.0",
+    "node-sass": "^7.0.1",
+    "optipng-bin": "^8.1.0",
+    "pngquant-bin": "^7.0.2"
   }
 }

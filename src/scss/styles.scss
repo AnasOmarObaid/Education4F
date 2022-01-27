@@ -2,18 +2,11 @@
 @import '../bootstrap/functions';
 @import '../bootstrap/variables';
 
-// make some change in document
-* {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    background-color: $body-background;
-    overflow-x: hidden;
-}
+// import my classes
+@import 'classes';
 
-// call mixin functions
+// import mixin functions
 @import 'mixins/forms';
 @import 'mixins/buttons';
 

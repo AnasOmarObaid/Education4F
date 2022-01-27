@@ -1,5 +1,7 @@
 .login {
     height: 100vh;
+    display: flex;
+    align-items: center;
 
     .form-area {
         padding: 1.7rem;
@@ -12,7 +14,7 @@
 
             input[type="email"],
             input[type="password"] {
-                @include input();
+                @include input($icon:2.5rem);
             }
 
             button[type="submit"] {
@@ -42,13 +44,14 @@
             }
         }
 
-        .gap-2{ 
-            a:nth-child(1){
+        .gap-2 {
+            a:nth-child(1) {
                 @include submit($background-color: $facebook-background);
                 font-size: 1.05rem;
                 border-color: $facebook-background;
             }
-            a:nth-child(2){
+
+            a:nth-child(2) {
                 @include submit($background-color: $google-background);
                 font-size: 1.05rem;
                 border-color: $google-background;

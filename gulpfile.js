@@ -98,6 +98,10 @@ gulp.task('imagemin', () => {
                     },
                     {
                         cleanupIDs: false
+                    },
+                    {
+                        name: 'removeViewBox',
+                        active: false
                     }
                 ]
             })

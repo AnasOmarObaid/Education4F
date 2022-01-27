@@ -1,0 +1,35 @@
+// make some change in document
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $body-background;
+    overflow-x: hidden;
+}
+
+// my class
+.brand {
+    color: #000 !important;
+    a{
+        color:#000;
+        font-weight: bold;
+    }
+    span {
+        font-weight: bolder;
+        color: #645beb;
+        font-size: 2.25rem;
+    }
+}
+
+.field{
+    position:relative
+}
+
+.input-icon{
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    color: $my-primary
+}
