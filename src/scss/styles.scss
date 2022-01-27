@@ -6,7 +6,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -16,6 +15,7 @@ body {
 
 // call mixin functions
 @import 'mixins/forms';
+@import 'mixins/buttons';
 
 // import my pages
 @import 'pages/login';

@@ -1,0 +1,5 @@
+@mixin submit( $background-color: $my-primary, $line-height: $line-height, $color: $white) {
+    line-height: $line-height;
+    color: $white;
+    background-color: $background-color;
+}

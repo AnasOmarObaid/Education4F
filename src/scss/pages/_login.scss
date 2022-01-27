@@ -1,19 +1,57 @@
-.login{
-    height:100vh;
-    .form-area{
-        padding: 1.2rem;
-        h2{
+.login {
+    height: 100vh;
+
+    .form-area {
+        padding: 1.7rem;
+
+        h2 {
             text-align: center;
         }
-        form{
-            input[type="email"], input[type="password"]{
+
+        form {
+
+            input[type="email"],
+            input[type="password"] {
                 @include input();
             }
-            button[type="submit"]{
-                line-height: $line-height;
-                color: $white;
-                background-color:$my-primary;
-                font-size: 15px;
+
+            button[type="submit"] {
+                @include submit();
+                font-size: 1.05rem;
+                border-color: $my-primary;
+            }
+
+            .form-check {
+                input {
+                    border-radius: 0;
+                    float: none;
+                }
+
+                label,
+                a {
+                    font-size: $font-vs;
+                    color: #272727;
+                    font-weight: 200;
+                    font-weight: 400;
+                }
+
+                a {
+                    float: right;
+                    color: $my-primary
+                }
+            }
+        }
+
+        .gap-2{ 
+            a:nth-child(1){
+                @include submit($background-color: $facebook-background);
+                font-size: 1.05rem;
+                border-color: $facebook-background;
+            }
+            a:nth-child(2){
+                @include submit($background-color: $google-background);
+                font-size: 1.05rem;
+                border-color: $google-background;
             }
         }
     }

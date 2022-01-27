@@ -14,7 +14,6 @@ import svgo from 'imagemin-svgo';
 import gulpSass from 'gulp-sass';
 import nodeSass from 'node-sass';
 
-
 const sass = gulpSass(nodeSass);
 
 
