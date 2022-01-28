@@ -50,7 +50,7 @@
                 font-size: 1.05rem;
                 border-color: $facebook-background;
             }
- 
+
             a:nth-child(2) {
                 @include submit($background-color: $google-background);
                 font-size: 1.05rem;
