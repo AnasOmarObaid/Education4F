@@ -7,15 +7,19 @@
 body {
     background-color: $body-background;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 // my class
 .brand {
     color: #000 !important;
-    a{
-        color:#000;
+
+    a {
+        color: #000;
         font-weight: bold;
     }
+
     span {
         font-weight: bolder;
         color: #645beb;
@@ -23,11 +27,11 @@ body {
     }
 }
 
-.field{
-    position:relative
+.field {
+    position: relative
 }
 
-.input-icon{
+.input-icon {
     position: absolute;
     top: 12px;
     left: 14px;

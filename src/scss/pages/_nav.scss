@@ -1,0 +1,94 @@
+nav {
+    background-color: inherit !important;
+    z-index: 100;
+
+    .brand {
+        margin-right: 1.5rem;
+
+        h2 {
+            a {
+                color: #fff;
+
+                span {
+                    padding-left: 3px;
+                }
+
+                &:hover {
+                    color: #fff !important
+                }
+            }
+
+        }
+    }
+
+    .navbar-light {
+        .navbar-brand {
+            &:hover {
+                color: #fff !important
+            }
+        }
+    }
+
+    .navbar-nav {
+        align-items: baseline;
+
+        .nav-item {
+            display: inline-block;
+
+            a {
+                color: #fff;
+                font-size: .7rem;
+                letter-spacing: 1.4px;
+
+                &:hover {
+                    color: #645BEB;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    form {
+        input[type="search"] {
+            padding-left: 2.3rem
+        }
+
+        .input-icon {
+            top: 8px;
+            left: 9px;
+        }
+    }
+
+    .buttons {
+        button {
+            @include button();
+        }
+
+        button:nth-child(1) {
+            background-color: #645BEB;
+            color: #fff;
+            border-color: #645BEB;
+
+            &:hover {
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                border-color: #645BEB;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        button:nth-child(2) {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border-color: #645BEB;
+
+            &:hover {
+                background-color: #645BEB;
+                color: #fff;
+                border-color: #645BEB;
+
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}

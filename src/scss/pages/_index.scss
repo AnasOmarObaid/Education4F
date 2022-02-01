@@ -1,0 +1,66 @@
+.index {
+    .banner {
+        position: relative;
+        height: 100vh;
+        background: radial-gradient(circle at 0% 2%, #283e63, #172337 99%) !important;
+
+        @import 'pages/nav';
+
+        .home-banner {
+            margin-top: -7rem;
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .content {
+                margin-left: -3rem;
+
+                p {
+                    color: #fff;
+                    line-height: 1.5;
+                    font-size: 24px;
+                    letter-spacing: .7px
+                }
+
+                .buttons {
+                    button {
+                        @include button();
+                    }
+
+                    button:nth-child(1) {
+                        background-color: #ffffff;
+                        color: rgb(0, 0, 0);
+                        border-color: #645BEB;
+                        padding: 10px 15px 10px 15px;
+
+                        &:hover {
+                            background-color: #645BEB;
+                            color: #fff;
+                            border-color: #ffffff;
+
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+
+                    button:nth-child(2) {
+                        background-color: #645BEB;
+                        color: #fff;
+                        border-color: #ffffff;
+                        padding: 10px 15px 10px 15px;
+
+                        &:hover {
+                            background-color: #ffffff;
+                            color: rgb(0, 0, 0);
+                            border-color: #645BEB;
+
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
