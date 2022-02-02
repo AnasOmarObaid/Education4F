@@ -1,8 +1,11 @@
 .index {
+
+    // banner
     .banner {
         position: relative;
         height: 100vh;
         background: radial-gradient(circle at 0% 2%, #283e63, #172337 99%) !important;
+        overflow: hidden;
 
         @import 'pages/nav';
 
@@ -62,5 +65,247 @@
             }
         }
 
+    }
+
+    // main category
+    .main-categories {
+        h3 {
+            color: #4f4b4b
+        }
+
+        .category-area {
+            justify-content: space-between;
+
+            .category {
+                width: 230px;
+                height: 230px;
+
+
+                &:hover {
+                    .category-bottom {
+                        .content {
+                            display: none !important;
+
+                        }
+
+                        .explore-btn a {
+                            display: block !important;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+
+                .category-top {
+                    border-radius: 0.2rem;
+                    padding: .7rem;
+                    border-radius: 5px;
+
+                    .type-area p {
+                        margin-bottom: 0 !important;
+
+                        a {
+                            margin: 0;
+                            padding: 0;
+                            color: #fff;
+                            font-weight: bold;
+
+                            &:hover {
+                                border-bottom: 1px solid;
+                                padding-bottom: 2px;
+                                border-bottom-width: revert;
+                                transition: all 0.1s ease-in-out;
+                            }
+                        }
+                    }
+
+                }
+
+                .category-bottom {
+                    background-color: #fff;
+                    padding: .7rem;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    .content {
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+
+                    .series,
+                    .video {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        span {
+                            color: #000;
+                            font-weight: bolder;
+                        }
+
+                        small {
+                            color: #29292a;
+                        }
+                    }
+
+                    .co {
+                        color: #29292a;
+                        font-size: 28px;
+                    }
+                }
+
+                .explore-btn {
+
+                    a {
+                        padding: 5px 30px 5px 30px;
+                        line-height: 1.7;
+                        letter-spacing: 1.3px;
+                        border-radius: 20px;
+                        font-size: 14px;
+                        background-color: #ffffff;
+                        color: #000;
+                        border-color: #000000;
+                        font-weight: bold;
+                        display: none;
+
+                        &:hover {
+                            background-color: #645BEB;
+                            color: #fff;
+                            border-color: #645BEB;
+
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+            .category:nth-child(1) {
+                .category-top {
+                    background: linear-gradient(180deg, #f44881, #ec454f);
+                }
+            }
+
+            .category:nth-child(2) {
+                .category-top {
+                    background: linear-gradient(0deg, #f19a1a, #ffc73c);
+                }
+            }
+
+            .category:nth-child(3) {
+                .category-top {
+                    background: linear-gradient(180deg, #21c8f6, #637bff);
+                }
+            }
+
+            .category:nth-child(4) {
+                .category-top {
+                    background: linear-gradient(180deg, #6edcc4, #1aab8b);
+                }
+            }
+
+            .category:nth-child(5) {
+                .category-top {
+                    background: linear-gradient(0deg, #8b60ed, #b372bd);
+                }
+            }
+        }
+    }
+
+    // rating
+    .rating {
+        background-color: #343A40;
+        padding: 1rem;
+
+        .header {
+            h3 {
+                color: #fff;
+                font-size: 2rem;
+            }
+
+            p {
+                color: #ddd;
+                letter-spacing: 1px
+            }
+        }
+
+        .series {
+
+            .image-area {
+                img {
+                    max-width: 300px;
+                    //height: 135px;
+                }
+            }
+
+            p,
+            span {
+                color: #fff;
+                font-size: 11px;
+                padding-top: 0.5rem;
+                letter-spacing: .5px;
+                margin-bottom: 1px;
+            }
+
+            span {
+                color: rgb(187, 187, 187);
+            }
+
+            .rat {
+                justify-content: space-between;
+
+                small {
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+
+    // EducBit
+    .educBit {
+        h3 {
+            color: #000;
+            font-weight: 600;
+            letter-spacing: .5px;
+
+            a {
+                color: #645BEB;
+            }
+        }
+
+        .educ-video {
+            .item {
+                max-width: 300px;
+                cursor: pointer;
+
+                img {
+                    max-width: 240px;
+                    max-height: 135px;
+
+                }
+
+                p,
+                span {
+                    color: rgb(32, 32, 32);
+                    font-size: 11px;
+                    padding-top: 0.5rem;
+                    letter-spacing: .5px;
+                    margin-bottom: 1px;
+                }
+
+                .rat {
+                    justify-content: space-between;
+                    .star{
+                        .fa-star{
+                            font-size: 14px !important;
+                            
+                        }
+                    }
+                   
+                    small {
+                        color: rgb(32, 32, 32);
+                    }
+                }
+
+            }
+        }
     }
 }
