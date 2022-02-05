@@ -1,0 +1,135 @@
+.footer {
+    background-color: #2A2D31;
+    margin-top: 5rem;
+
+    .content {
+        h3 {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 2.3rem;
+        }
+
+        form {
+            width: 75%;
+            margin: auto;
+
+            input[type="email"] {
+                @include input($icon:2.5rem);
+            }
+
+            // button[type="submit"] {
+            //     @include submit();
+            //     font-size: 1.05rem;
+            //     border-color: $my-primary;
+            // }
+
+            .form-check {
+                input {
+                    border-radius: 0;
+                    float: none;
+                }
+
+                label {
+                    font-size: $font-vs;
+                    color: #272727;
+                    font-weight: 200;
+                    font-weight: 400;
+                }
+            }
+
+            button[type="submit"] {
+                position: absolute;
+                background: #645beb;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                color: #fff;
+                font-size: .8rem;
+                border-radius: unset;
+                padding-left: 1.3rem;
+                padding-right: 1.3rem;
+            }
+        }
+
+        .row {
+            .info {
+                margin-top: 5rem;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                h2 {
+                    color: #fff;
+                    font-weight: bold;
+                    letter-spacing: 1.3px;
+                    margin-bottom: 0;
+
+                    span {
+                        color: $my-primary;
+                    }
+                }
+
+                p {
+                    color: #ddd;
+                    font-size: .8rem;
+                    letter-spacing: 1px
+                }
+
+                .social-icons {
+                    img {
+                        max-width: 50px;
+                        max-height: 50px;
+                    }
+                }
+            }
+
+            .aside {
+                margin-top: 5rem;
+
+                span {
+                    color: #fff;
+                    font-weight: bolder;
+                    letter-spacing: 2px;
+                    font-size: .85rem;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    padding: 0;
+                    margin-top: 1.3rem;
+
+                    li {
+                        padding-bottom: .5rem;
+                        font-size: .8rem;
+
+                        a {
+                            text-decoration: none;
+                            color: #7b7b7b;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+
+                            &:hover {
+                                color: #fff;
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+
+        .copy {
+            p {
+                margin: 0;
+                color: #fff;
+                font-size: .7rem;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
+}

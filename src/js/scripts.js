@@ -6,9 +6,9 @@ $(document).ready(function(){
     // owl setup
 
     $('.owl-carousel').owlCarousel({
-        center:true,
+        center: true,
         loop:true,
-        margin:10,
+        margin:5,
         nav:false,
         autoplay:true,
         autoplayTimeout:4000,

@@ -12,24 +12,60 @@
         .home-banner {
             margin-top: -7rem;
 
-            @media (max-width: 768px) {
-                display: flex;
+            // Extra small devices (phones, 500px and down)
+            @media only screen and (max-width: 500px) {
+                display: flex !important;
                 flex-direction: column;
+                margin-top: -1.5rem;
             }
+
+            // // from 0 to  768px screen
+            // @media (max-width: 768px) {
+            //     display: flex;
+            //     flex-direction: column;
+            //     margin-top: -4.5rem;
+            // }
 
             .content {
                 margin-left: -3rem;
+
+                // Extra small devices (phones, 500px and down)
+                @media only screen and (max-width: 500px) {
+                    margin-left: 0;
+                    margin-top: 2rem;
+
+                    span {
+                        font-size: .8rem;
+                    }
+                }
 
                 p {
                     color: #fff;
                     line-height: 1.5;
                     font-size: 24px;
-                    letter-spacing: .7px
+                    letter-spacing: .7px;
+
+                    // Extra small devices (phones, 500px and down)
+                    @media only screen and (max-width: 500px) {
+                        font-size: 1rem;
+                    }
                 }
 
                 .buttons {
+
+                    // Extra small devices (phones, 500px and down)
+                    @media only screen and (max-width: 500px) {
+                        text-align: center;
+                    }
+
                     button {
                         @include button();
+
+                        // Extra small devices (phones, 500px and down)
+                        @media only screen and (max-width: 500px) {
+                            font-size: .7rem;
+                            text-align: center;
+                        }
                     }
 
                     button:nth-child(1) {
@@ -69,6 +105,10 @@
 
     // main category
     .main-categories {
+
+        margin-top: 4.5rem;
+        margin-bottom: 5rem;
+
         h3 {
             color: #4f4b4b
         }
@@ -261,6 +301,8 @@
 
     // EducBit
     .educBit {
+        margin-top: 4.5rem;
+
         h3 {
             color: #000;
             font-weight: 600;
@@ -293,13 +335,14 @@
 
                 .rat {
                     justify-content: space-between;
-                    .star{
-                        .fa-star{
+
+                    .star {
+                        .fa-star {
                             font-size: 14px !important;
-                            
+
                         }
                     }
-                   
+
                     small {
                         color: rgb(32, 32, 32);
                     }
@@ -308,4 +351,72 @@
             }
         }
     }
+
+    // sub-category
+    .sub-category {
+        margin-top: 5rem;
+
+        h3 {
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: .5px;
+            font-size: 2rem;
+
+            span {
+                color: #645BEB;
+                ;
+            }
+        }
+
+        p {
+            margin-top: 1rem;
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        .box {
+            height: 84px;
+            min-width: 192px;
+            width: 235px;
+            background-color: #fff;
+            padding-bottom: 0.25rem;
+            padding-top: 0.25rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            color: #000;
+            overflow: hidden;
+            align-items: center;
+            justify-content: space-around;
+
+            .image-area {
+                img {
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+            }
+
+            .content {
+                span {
+                    color: #000;
+                    font-weight: 600
+                }
+
+                .info {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: .5rem;
+
+                    small {
+                        color: rgb(93, 92, 92);
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // footer
+    @import 'pages/footer';
 }
