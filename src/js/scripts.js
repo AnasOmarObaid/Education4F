@@ -8,14 +8,14 @@ $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         center: true,
         loop:true,
-        margin:5,
+        margin:30,
         nav:false,
         autoplay:true,
         autoplayTimeout:4000,
         autoplayHoverPause:true,
         responsive:{
             0:{
-                items:1
+                items:2
             },
             600:{
                 items:3

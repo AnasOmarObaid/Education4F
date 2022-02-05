@@ -7,6 +7,11 @@
             color: #fff;
             font-size: 2rem;
             margin-bottom: 2.3rem;
+
+            // phone screen 
+            @media only screen and (max-width: 768px) {
+                font-size: 1rem;
+            }
         }
 
         form {
@@ -55,6 +60,11 @@
             .info {
                 margin-top: 5rem;
 
+                // phone screen 
+                @media only screen and (max-width: 768px) {
+                    text-align: center;
+                }
+
                 a {
                     text-decoration: none;
                     color: #fff;
@@ -65,6 +75,12 @@
                     font-weight: bold;
                     letter-spacing: 1.3px;
                     margin-bottom: 0;
+
+                    // phone screen 
+                    @media only screen and (max-width: 768px) {
+                        font-size: 1rem;
+                        letter-spacing: 0px;
+                    }
 
                     span {
                         color: $my-primary;
@@ -88,11 +104,26 @@
             .aside {
                 margin-top: 5rem;
 
+                // phone screen 
+                @media only screen and (max-width: 768px) {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    margin-top: 2rem;
+
+                }
+
                 span {
                     color: #fff;
                     font-weight: bolder;
                     letter-spacing: 2px;
                     font-size: .85rem;
+                    display: inline-block;
+
+                    // phone screen 
+                    @media only screen and (max-width: 768px) {
+                        margin-top: 1.5rem;
+                    }
+
                 }
 
                 ul {
@@ -120,7 +151,7 @@
                         }
                     }
                 }
-            }  
+            }
         }
 
         .copy {

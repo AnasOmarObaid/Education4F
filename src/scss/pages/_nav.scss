@@ -2,6 +2,19 @@ nav {
     background-color: inherit !important;
     z-index: 100;
 
+    // Extra small devices (phones, 768px and down)
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 2rem;
+    }
+
+    .navbar-collapse {
+        @media only screen and (max-width: 768px) {
+            margin-top: 1rem;
+            background: rgb(28, 39, 55);
+            padding: 1.3rem;
+        }
+    }
+
     .brand {
         margin-right: 1.5rem;
 
@@ -32,8 +45,20 @@ nav {
     .navbar-nav {
         align-items: baseline;
 
+        // phone screen 
+        @media only screen and (max-width: 768px) {
+            display: flex;
+            align-items: stretch;
+        }
+
         .nav-item {
             display: inline-block;
+
+            // phone screen 
+            @media only screen and (max-width: 768px) {
+                padding-right: 1rem;
+                margin-top: 15px;
+            }
 
             a {
                 color: #fff;
@@ -60,6 +85,13 @@ nav {
     }
 
     .buttons {
+
+        //phone screen
+        @media only screen and (max-width: 768px) {
+            margin-top: 1rem;
+            float: none !important;
+        }
+
         button {
             @include button();
         }

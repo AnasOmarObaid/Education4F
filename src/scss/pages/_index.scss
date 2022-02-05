@@ -12,8 +12,8 @@
         .home-banner {
             margin-top: -7rem;
 
-            // Extra small devices (phones, 500px and down)
-            @media only screen and (max-width: 500px) {
+            // Extra small devices (phones, 768px and down)
+            @media only screen and (max-width: 768px) {
                 display: flex !important;
                 flex-direction: column;
                 margin-top: auto;
@@ -29,8 +29,8 @@
             .content {
                 margin-left: -3rem;
 
-                // Extra small devices (phones, 500px and down)
-                @media only screen and (max-width: 500px) {
+                // Extra small devices (phones, 768px and down)
+                @media only screen and (max-width: 768px) {
                     margin-left: 0;
                     margin-top: 2rem;
 
@@ -45,24 +45,24 @@
                     font-size: 24px;
                     letter-spacing: .7px;
 
-                    // Extra small devices (phones, 500px and down)
-                    @media only screen and (max-width: 500px) {
+                    // Extra small devices (phones, 768px and down)
+                    @media only screen and (max-width: 768px) {
                         font-size: 1rem;
                     }
                 }
 
                 .buttons {
 
-                    // Extra small devices (phones, 500px and down)
-                    @media only screen and (max-width: 500px) {
+                    // Extra small devices (phones, 768px and down)
+                    @media only screen and (max-width: 768px) {
                         text-align: center;
                     }
 
                     button {
                         @include button();
 
-                        // Extra small devices (phones, 500px and down)
-                        @media only screen and (max-width: 500px) {
+                        // Extra small devices (phones, 768px and down)
+                        @media only screen and (max-width: 768px) {
                             font-size: .7rem;
                             text-align: center;
                         }
@@ -110,16 +110,32 @@
         margin-bottom: 5rem;
 
         h3 {
-            color: #4f4b4b
+            color: #4f4b4b;
+
+            // phone screen 
+            @media only screen and (max-width: 768px) {
+                font-size: 1rem;
+            }
         }
 
         .category-area {
             justify-content: space-between;
 
+            // phone screen 
+            @media only screen and (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
             .category {
                 width: 230px;
                 height: 230px;
 
+                // phone screen 
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
 
                 &:hover {
                     .category-bottom {
@@ -218,6 +234,14 @@
                 }
             }
 
+            .category:last-child {
+
+                // phone screen 
+                @media only screen and (max-width: 768px) {
+                    margin-bottom: 0;
+                }
+            }
+
             .category:nth-child(1) {
                 .category-top {
                     background: linear-gradient(180deg, #f44881, #ec454f);
@@ -259,20 +283,41 @@
             h3 {
                 color: #fff;
                 font-size: 2rem;
+
+                // phone screen 
+                @media only screen and (max-width: 768px) {
+                    font-size: 1rem;
+                }
             }
 
             p {
                 color: #ddd;
-                letter-spacing: 1px
+                letter-spacing: 1px;
+
+                // phone screen 
+                @media only screen and (max-width: 768px) {
+                    font-size: .8rem;
+                    letter-spacing: 0;
+                }
             }
         }
 
         .series {
 
+
             .image-area {
+
+                // phone screen 
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                    max-height: 285px;
+                }
+
                 img {
-                    max-width: 300px;
-                    //height: 135px;
+                    @media only screen and (max-width: 768px) {
+                        width: 100% !important;
+                        max-height: 285px;
+                    }
                 }
             }
 
@@ -289,6 +334,14 @@
                 color: rgb(187, 187, 187);
             }
 
+            .star {
+
+                // phone screen 
+                @media only screen and (max-width: 768px) {
+                    font-size: .8rem;
+                }
+            }
+
             .rat {
                 justify-content: space-between;
 
@@ -296,6 +349,8 @@
                     color: rgb(255, 255, 255);
                 }
             }
+
+
         }
     }
 
@@ -305,8 +360,13 @@
 
         h3 {
             color: #000;
-            font-weight: 600;
+            font-weight: bold;
             letter-spacing: .5px;
+
+            // phone screen 
+            @media only screen and (max-width: 768px) {
+                font-size: 1rem;
+            }
 
             a {
                 color: #645BEB;
@@ -322,6 +382,11 @@
                     max-width: 240px;
                     max-height: 135px;
 
+                    // phone screen 
+                    @media only screen and (max-width: 768px) {
+                        max-height: 110px;
+                    }
+
                 }
 
                 p,
@@ -331,6 +396,14 @@
                     padding-top: 0.5rem;
                     letter-spacing: .5px;
                     margin-bottom: 1px;
+                }
+
+                .star {
+
+                    // phone screen 
+                    @media only screen and (max-width: 768px) {
+                        font-size: .7rem;
+                    }
                 }
 
                 .rat {
@@ -362,6 +435,11 @@
             letter-spacing: .5px;
             font-size: 2rem;
 
+            // phone screen 
+            @media only screen and (max-width: 768px) {
+                font-size: 1rem;
+            }
+
             span {
                 color: #645BEB;
                 ;
@@ -374,6 +452,11 @@
             letter-spacing: 1px;
             font-size: 1.25rem;
             font-weight: 300;
+
+            // phone screen 
+            @media only screen and (max-width: 768px) {
+                font-size: .8rem;
+            }
         }
 
         .box {
@@ -390,6 +473,13 @@
             align-items: center;
             justify-content: space-around;
 
+            // phone screen 
+            @media only screen and (max-width: 768px) {
+                width: 190px;
+                padding-left: .8rem;
+                padding-right: .8rem;
+            }
+
             .image-area {
                 img {
                     max-width: 50px;
@@ -400,7 +490,12 @@
             .content {
                 span {
                     color: #000;
-                    font-weight: 600
+                    font-weight: bold;
+
+                    // phone screen 
+                    @media only screen and (max-width: 768px) {
+                        font-size: .8rem;
+                    }
                 }
 
                 .info {
