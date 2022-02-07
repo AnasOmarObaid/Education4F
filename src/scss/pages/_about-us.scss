@@ -1,0 +1,46 @@
+  // navigation
+  @import 'pages/nav';
+
+  .about-us {
+      background: radial-gradient(circle at 0% 2%, #283e63, #172337 99%) !important;
+
+      .nav-item:nth-child(2) {
+        display: inline-block;
+
+        a {
+            color: #645BEB!important;
+        }
+    }
+
+      .body {
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+
+           // Extra small devices (phones, 768px and down)
+           @media only screen and (max-width: 768px) {
+            height: auto;
+        }
+
+          p{
+            --bs-text-opacity: 1;
+            color: #eee;
+            font-size: 1.15rem;
+            letter-spacing: 1px;
+            line-height: 2rem;
+
+            // Extra small devices (phones, 768px and down)
+            @media only screen and (max-width: 768px) {
+                font-size: .8rem;
+            }
+          }
+      }
+
+      // footer
+      @import 'pages/footer';
+
+      .footer {
+          margin-top: 0;
+      }
+  }

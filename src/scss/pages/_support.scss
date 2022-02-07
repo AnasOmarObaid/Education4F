@@ -1,0 +1,84 @@
+  // navigation
+  @import 'pages/nav';
+
+  .support {
+      background: radial-gradient(circle at 0% 2%, #283e63, #172337 99%) !important;
+      overflow: hidden;
+      max-width: 100vw;
+
+      .body-area {
+          height: 100vh;
+          max-width: 100vw;
+          display: flex;
+          align-items: center;
+
+          // Extra small devices (phones, 768px and down)
+          @media only screen and (max-width: 768px) {
+            height: auto;
+            padding-bottom: 4rem;
+          }
+
+          .form-area {
+
+              h2 {
+                  text-align: center;
+              }
+
+              form {
+
+                  input[type="text"],
+                  input[type="email"],
+                  textarea {
+                      @include input($icon:2.5rem);
+                  }
+
+                  button[type="submit"] {
+                      @include submit();
+                      font-size: 1.05rem;
+                      border-color: $my-primary;
+                  }
+
+                  .form-check {
+                      input {
+                          border-radius: 0;
+                          float: none;
+                      }
+
+                      label,
+                      a {
+                          font-size: $font-vs;
+                          color: #272727;
+                          font-weight: 200;
+                          font-weight: 400;
+                      }
+
+                      a {
+                          float: right;
+                          color: $my-primary
+                      }
+                  }
+              }
+
+              .gap-2 {
+                  a:nth-child(1) {
+                      @include submit($background-color: $facebook-background);
+                      font-size: 1.05rem;
+                      border-color: $facebook-background;
+                  }
+
+                  a:nth-child(2) {
+                      @include submit($background-color: $google-background);
+                      font-size: 1.05rem;
+                      border-color: $google-background;
+                  }
+              }
+          }
+      }
+
+      // footer
+      @import 'pages/footer';
+
+      .footer {
+          margin-top: 0;
+      }
+  }
