@@ -1,0 +1,65 @@
+// navigation
+@import 'pages/nav';
+
+.privacy, .terms {
+
+    .navbar {
+        background: radial-gradient(circle at 0% 2%, #283e63, #172337 99%) !important;
+    }
+
+    .body {
+        width: 70%;
+        margin: auto;
+
+        // Extra small devices (phones, 768px and down)
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin: initial;
+        }
+
+        p {
+            --bs-text-opacity: 1;
+            font-size: 1rem;
+            letter-spacing: .2px;
+            line-height: 1.5rem;
+            color: #000;
+            font-weight: 500
+        }
+
+        ul {
+            li {
+                padding: .2rem
+            }
+        }
+
+        header {
+
+            text-align: center;
+            color: #22292f;
+            line-height: 1.125;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            --tw-text-opacity: 1;
+            font-weight: bold
+        }
+
+
+        // information and Collection
+        .information {
+            h3 {
+                margin-top: 2.5rem;
+                color: #22292f;
+                line-height: 1.125;
+                margin-bottom: 1rem;
+                font-size: 1.75rem;
+                --tw-text-opacity: 1;
+                font-weight: bold
+            }
+        }
+    }
+
+    // footer
+    @import 'pages/footer';
+
+
+}

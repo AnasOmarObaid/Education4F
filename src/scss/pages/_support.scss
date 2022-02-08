@@ -2,9 +2,10 @@
   @import 'pages/nav';
 
   .support {
-      background: radial-gradient(circle at 0% 2%, #283e63, #172337 99%) !important;
+    
       overflow: hidden;
       max-width: 100vw;
+      background: radial-gradient(circle at 0% 2%, #283e63, #172337 99%) !important;
 
       .body-area {
           height: 100vh;
