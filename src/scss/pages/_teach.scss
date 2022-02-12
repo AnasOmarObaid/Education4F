@@ -1,0 +1,263 @@
+// navigation
+@import 'pages/nav';
+
+// teach section
+.teach {
+    overflow: hidden;
+    max-width: 100vw;
+    background: #fff;
+
+    // home section
+    .home {
+        background: radial-gradient(circle at 0% 2%, #283e63, #172337 99%) !important;
+        height: 85vh;
+        max-width: 100vw;
+
+        // Extra small devices (phones, 768px and down)
+        @media only screen and (max-width: 768px) {
+            height: 50vh;
+            overflow: hidden;
+        }
+
+        nav {
+            .nav-item:nth-child(1) {
+                display: inline-block;
+
+                a {
+                    color: #645BEB !important;
+                }
+            }
+        }
+
+        .banner {
+            height: 70vh;
+            max-width: 100vw;
+            display: flex;
+            align-items: center;
+
+            // Extra small devices (phones, 768px and down)
+            @media only screen and (max-width: 768px) {
+                height: 35vh;
+            }
+
+
+            h2 {
+                color: #fff;
+                letter-spacing: .3px;
+                font-size: 2.2rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: #fff;
+                line-height: 1.5;
+                letter-spacing: .3px;
+                font-size: 1.2rem
+            }
+
+            .buttons {
+
+                button {
+                    @include button();
+
+                }
+
+                button:nth-child(1) {
+                    background-color: #ffffff;
+                    color: rgb(0, 0, 0);
+                    border-color: #645BEB;
+                    padding: 10px 30px 10px 30px;
+
+                    &:hover {
+                        background-color: #645BEB;
+                        color: #fff;
+                        border-color: #ffffff;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+
+            }
+        }
+    }
+
+    //  reasons to start
+    .start {
+        h2 {
+            color: #222222;
+            font-weight: bold;
+        }
+
+        .content-area {
+            display: flex;
+            margin-top: 3.2rem;
+
+            // Extra small devices (phones, 768px and down)
+            @media only screen and (max-width: 768px) {
+                flex-direction: column !important;
+            }
+
+            .content {
+                text-align: center;
+
+                // Extra small devices (phones, 768px and down)
+                @media only screen and (max-width: 768px) {
+                    margin-bottom: 1.5rem !important;
+                }
+
+
+                h5 {
+                    font-weight: bold;
+                    font-size: 1rem
+                }
+
+                p {
+                    font-size: .9rem;
+                    width: 80%;
+                    margin: auto;
+
+                    // Extra small devices (phones, 768px and down)
+                    @media only screen and (max-width: 768px) {
+                        width: 100% !important;
+                    }
+                }
+            }
+
+            .content:last-child {
+                @media only screen and (max-width: 768px) {
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+
+    }
+
+    // information
+    .information {
+        background: #2A2D31;
+        min-height: 100px;
+        margin-top: 3rem;
+
+        .information-area {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+
+            // Extra small devices (phones, 768px and down)
+            @media only screen and (max-width: 768px) {
+                flex-direction: column !important;
+                align-items: center;
+            }
+
+            .content {
+                color: #fff;
+                width: 20%;
+                text-align: center;
+
+                @media only screen and (max-width: 768px) {
+                    margin-bottom: 2rem;
+                }
+
+                div {
+                    p {
+                        font-size: 3rem;
+                        margin: 0;
+                        padding: 0;
+                        font-weight: bold;
+                        font-family: "Helvetica Neue", Helvetica, Arial
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    margin-top: -.9rem;
+                    padding: 0;
+                    font-size: .9rem;
+                    text-align: center;
+                }
+            }
+
+            .content:last-child {
+                @media only screen and (max-width: 768px) {
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+    }
+
+    // how to begin section
+    .begin {
+        margin-top: 3.5rem;
+
+        header {
+            color: #222222;
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .accordion {
+            .content {
+                padding: 1rem;
+
+                h3 {
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    margin-top: 2rem
+                }
+            }
+        }
+    }
+
+    // instructor section
+    .instructor {
+        margin-top: 3.5rem;
+        text-align: center;
+        background-color: rgb(22, 22, 22);
+        padding: 2rem;
+
+        h2 {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        p {
+            font-size: .8rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .buttons {
+
+            button {
+                @include button();
+
+            }
+
+            button:nth-child(1) {
+                background-color: #645BEB;
+                color: rgb(255, 255, 255);
+                border-color: #645BEB;
+                padding: 10px 35px 10px 35px;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: rgb(0, 0, 0);
+                    border-color: #ffffff;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+        }
+    }
+
+
+    // footer
+    @import 'pages/footer';
+
+    .footer {
+        margin-top: 0 !important;
+    }
+
+}

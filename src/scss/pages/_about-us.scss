@@ -2,7 +2,10 @@
   @import 'pages/nav';
 
   .about-us {
+    nav{
       background: radial-gradient(circle at 0% 2%, #283e63, #172337 99%) !important;
+    }
+     
 
       .nav-item:nth-child(2) {
         display: inline-block;
@@ -25,7 +28,7 @@
 
           p{
             --bs-text-opacity: 1;
-            color: #eee;
+            color: rgb(63, 62, 62);
             font-size: 1.15rem;
             letter-spacing: 1px;
             line-height: 2rem;
