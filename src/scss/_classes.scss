@@ -14,6 +14,7 @@ body {
 // my class
 .brand {
     color: #000 !important;
+    font-family: system-ui;
 
     a {
         color: #000;
@@ -38,6 +39,12 @@ body {
     color: $my-primary
 }
 
-.owl-dots{
-    display: none!important;
+.owl-dots {
+    display: none !important;
+}
+
+.my-active {
+    color: #ffffff !important;
+    opacity: 1!important;
+    font-weight: bold!important;
 }

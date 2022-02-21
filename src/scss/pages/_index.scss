@@ -53,7 +53,7 @@
                         text-align: center;
                     }
 
-                    button {
+                    a {
                         @include button();
 
                         // Extra small devices (phones, 768px and down)
@@ -63,7 +63,7 @@
                         }
                     }
 
-                    button:nth-child(1) {
+                    a:nth-child(1) {
                         background-color: #ffffff;
                         color: rgb(0, 0, 0);
                         border-color: #645BEB;
@@ -78,7 +78,7 @@
                         }
                     }
 
-                    button:nth-child(2) {
+                    a:nth-child(2) {
                         background-color: #645BEB;
                         color: #fff;
                         border-color: #ffffff;

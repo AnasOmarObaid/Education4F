@@ -1,0 +1,67 @@
+  // navigation
+  @import 'pages/nav';
+
+  .series {
+      overflow: hidden;
+      max-width: 100vw;
+      //background-image: radial-gradient(circle at 0 2%, #283e63, #172337 99%);
+
+      // navigation
+      nav {
+          background-image: radial-gradient(circle at 0 2%, #283e63, #172337 99%);
+
+          .navbar-collapse {
+
+              //justify-content: center;
+              ul {
+                  width: 100%;
+                  display: inline-block;
+                  text-align: center;
+
+                  li {
+                      a {
+                          font-size: .9rem;
+                          opacity: .6;
+
+                          &:hover {
+                              opacity: 1;
+                              font-weight: bolder;
+                              color: #ffffff;
+                              transition: all 0.3s ease-in-out;
+                          }
+                      }
+                  }
+              }
+          }
+      }
+
+      // introduction
+      .introduction {
+          h2 {
+              text-align: center;
+              font-weight: bold;
+              letter-spacing: .5px;
+              font-size: 2.2rem;
+              margin-top: 3rem;
+          }
+
+          p {
+              font-size: 1.3rem;
+              text-align: center;
+              width: 680px;
+              margin: auto;
+              color: #3f3e3e;
+              letter-spacing: .9px;
+              line-height: 2rem;
+              margin-top: 1rem;
+
+              span {
+                  font-weight: bold;
+                  color: #645beb;
+              }
+          }
+      }
+
+      // footer
+      @import 'pages/footer';
+  }
