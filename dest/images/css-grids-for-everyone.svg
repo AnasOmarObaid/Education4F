@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120.001" viewBox="0 0 120 120.001">
+    <defs>
+        <radialGradient id="radial-gradient" cx=".311" cy=".344" r=".337" gradientTransform="matrix(.826 .564 -.573 .839 .251 -.12)" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fac446"/>
+            <stop offset="1" stop-color="#233452" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="radial-gradient-2" cx=".5" cy=".5" r=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#c08d17"/>
+            <stop offset="1" stop-color="#ffbe24" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="linear-gradient" x1=".909" x2=".149" y1=".795" y2=".148" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f19a1a"/>
+            <stop offset="1" stop-color="#ffc73c"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1=".5" x2=".5" y1="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#a987f7"/>
+            <stop offset="1" stop-color="#b372bd"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+            <circle id="Shadow" cx="58" cy="58" r="58" class="cls-1" transform="translate(1602 671)"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Rectangle_15" fill="#fff" d="M0 0H28V28H0z" data-name="Rectangle 15" transform="translate(1663 696)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#1b283e}.cls-14,.cls-6{fill:none}.cls-6{stroke:#fac446;opacity:.5;stroke-miterlimit:10;stroke-width:.5px}.cls-8{fill:#fac446}.cls-13{stroke:none}
+        </style>
+    </defs>
+    <g id="languages-css-grids" transform="translate(-1645 -666)">
+        <g id="Color_Crown_Shadow" data-name="Color Crown + Shadow" transform="translate(4101 1056)">
+            <circle id="Shadow-2" cx="58" cy="58" r="58" class="cls-1" data-name="Shadow" transform="translate(-2454 -387)"/>
+            <circle id="Shadow-3" cx="58" cy="58" r="58" fill="url(#radial-gradient)" data-name="Shadow" opacity="0.563" transform="translate(-2454 -387)"/>
+            <g id="Color_Crown" data-name="Color Crown" transform="translate(-2456 -390)">
+                <path id="Ring" fill="url(#linear-gradient)" d="M780 826a59.72 59.72 0 0 1-33.547-10.247 60.176 60.176 0 0 1-21.739-26.4 59.921 59.921 0 0 1 5.532-56.9 60.176 60.176 0 0 1 26.4-21.738 59.92 59.92 0 0 1 56.9 5.532 60.174 60.174 0 0 1 21.738 26.4 59.923 59.923 0 0 1-5.532 56.9 60.174 60.174 0 0 1-26.4 21.739A59.623 59.623 0 0 1 780 826zm0-118a57.729 57.729 0 0 0-32.429 9.905 58.167 58.167 0 0 0-21.014 25.518 57.924 57.924 0 0 0 5.348 55 58.169 58.169 0 0 0 25.518 21.014 57.923 57.923 0 0 0 55-5.348 58.17 58.17 0 0 0 21.014-25.518 57.924 57.924 0 0 0-5.348-55 58.171 58.171 0 0 0-25.518-21.013A57.638 57.638 0 0 0 780 708z" transform="translate(-720 -706)"/>
+            </g>
+            <g id="Mask_Group_75" clip-path="url(#clip-path)" data-name="Mask Group 75" transform="translate(-4056 -1058)">
+                <g id="Group_173" data-name="Group 173" transform="translate(85 -82)">
+                    <g id="Rectangle_5" class="cls-6" data-name="Rectangle 5">
+                        <path d="M0 0H28V118H0z" class="cls-13" transform="translate(1505 752)"/>
+                        <path d="M0.25 0.25H27.75V117.75H0.25z" class="cls-14" transform="translate(1505 752)"/>
+                    </g>
+                    <g id="Rectangle_6" class="cls-6" data-name="Rectangle 6">
+                        <path d="M0 0H28V118H0z" class="cls-13" transform="translate(1533 752)"/>
+                        <path d="M0.25 0.25H27.75V117.75H0.25z" class="cls-14" transform="translate(1533 752)"/>
+                    </g>
+                    <g id="Rectangle_7" class="cls-6" data-name="Rectangle 7">
+                        <path d="M0 0H28V118H0z" class="cls-13" transform="translate(1561 752)"/>
+                        <path d="M0.25 0.25H27.75V117.75H0.25z" class="cls-14" transform="translate(1561 752)"/>
+                    </g>
+                    <g id="Rectangle_8" class="cls-6" data-name="Rectangle 8">
+                        <path d="M0 0H28V118H0z" class="cls-13" transform="translate(1589 752)"/>
+                        <path d="M0.25 0.25H27.75V117.75H0.25z" class="cls-14" transform="translate(1589 752)"/>
+                    </g>
+                    <g id="Rectangle_9" class="cls-6" data-name="Rectangle 9">
+                        <path d="M0 0H28V118H0z" class="cls-13" transform="translate(1617 752)"/>
+                        <path d="M0.25 0.25H27.75V117.75H0.25z" class="cls-14" transform="translate(1617 752)"/>
+                    </g>
+                    <g id="Rectangle_10" class="cls-6" data-name="Rectangle 10">
+                        <path d="M0 0H28V140H0z" class="cls-13" transform="rotate(90 446.5 1198.5)"/>
+                        <path d="M0.25 0.25H27.75V139.75H0.25z" class="cls-14" transform="rotate(90 446.5 1198.5)"/>
+                    </g>
+                    <g id="Rectangle_11" class="cls-6" data-name="Rectangle 11">
+                        <path d="M0 0H28V140H0z" class="cls-13" transform="rotate(90 432.5 1212.5)"/>
+                        <path d="M0.25 0.25H27.75V139.75H0.25z" class="cls-14" transform="rotate(90 432.5 1212.5)"/>
+                    </g>
+                    <g id="Rectangle_12" class="cls-6" data-name="Rectangle 12">
+                        <path d="M0 0H28V140H0z" class="cls-13" transform="rotate(90 418.5 1226.5)"/>
+                        <path d="M0.25 0.25H27.75V139.75H0.25z" class="cls-14" transform="rotate(90 418.5 1226.5)"/>
+                    </g>
+                    <g id="Rectangle_13" class="cls-6" data-name="Rectangle 13">
+                        <path d="M0 0H28V140H0z" class="cls-13" transform="rotate(90 404.5 1240.5)"/>
+                        <path d="M0.25 0.25H27.75V139.75H0.25z" class="cls-14" transform="rotate(90 404.5 1240.5)"/>
+                    </g>
+                    <g id="Rectangle_14" class="cls-6" data-name="Rectangle 14">
+                        <path d="M0 0H6V140H0z" class="cls-13" transform="rotate(90 390.5 1254.5)"/>
+                        <path d="M0.25 0.25H5.75V139.75H0.25z" class="cls-14" transform="rotate(90 390.5 1254.5)"/>
+                    </g>
+                </g>
+                <g id="Group_68" data-name="Group 68" transform="translate(1623 707)">
+                    <path id="Path_9" fill="none" stroke="#ffc73c" stroke-miterlimit="10" stroke-width="2px" d="M72.622 63.718L0 44.346l60.131-29.892L15.18 0" data-name="Path 9" transform="translate(4.723 4.411)"/>
+                    <g id="Group_42" data-name="Group 42" transform="translate(0 14)">
+                        <g id="Group_54" data-name="Group 54" transform="translate(-.5 30)">
+                            <circle id="Oval" cx="5.5" cy="5.5" r="5.5" class="cls-8"/>
+                        </g>
+                        <g id="Group" transform="translate(60)">
+                            <circle id="Oval_Copy_4" cx="4.5" cy="4.5" r="4.5" fill="url(#linear-gradient-2)" data-name="Oval Copy 4" transform="translate(.5 .5)"/>
+                            <path id="Combined_Shape_Copy_4" d="M4.444 0A4.444 4.444 0 1 1 0 4.444 4.444 4.444 0 0 1 4.444 0z" class="cls-8" data-name="Combined Shape Copy 4" transform="translate(.5 .5)"/>
+                        </g>
+                    </g>
+                    <circle id="Oval-2" cx="11.5" cy="11.5" r="11.5" fill="url(#radial-gradient-2)" data-name="Oval" transform="translate(10 -7)" style="mix-blend-mode:overlay;isolation:isolate"/>
+                    <g id="Group_39" data-name="Group 39" transform="translate(18 1)">
+                        <g id="Group_63" data-name="Group 63">
+                            <circle id="Oval-3" cx="3" cy="3" r="3" class="cls-8" data-name="Oval" transform="translate(0 .5)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Mask_Group_76" clip-path="url(#clip-path-2)" data-name="Mask Group 76" transform="translate(-4101 -1056)">
+                <path id="Path_17" fill="none" stroke="#fdc037" stroke-miterlimit="10" stroke-width="0.5px" d="M21.964 0v30.091h-10.44v-6.807H0v11.208h7.387v7.58h8.744V26.8h17.816v15.811H23.782v-5.449H11.951V55" data-name="Path 17" transform="translate(1667 679)"/>
+            </g>
+        </g>
+    </g>
+</svg>
