@@ -549,6 +549,7 @@
             display: flex;
             justify-content: space-between;
 
+        
             .mini-course {
                 width: 370px;
                 height: 308px;
@@ -558,6 +559,8 @@
                 position: relative;
                 overflow: hidden;
                 transition: transform .5s;
+
+
 
                 .image-area {
                     position: absolute;
@@ -663,7 +666,7 @@
 
                 &:hover {
 
-                    transform: rotate(15deg);
+                    transform: scale(1.3);
                     z-index: 1000;
 
                     .bottom-information {
@@ -743,9 +746,10 @@
                     }
 
                     &:hover {
-                        transition: all 1s ease-in-out;
-                        background-image: linear-gradient(123deg, #645BEB 12%, rgb(179, 114, 189) 95%);
                         opacity: 1;
+                        transition: all .5s ease-in-out;
+                        background-image: linear-gradient(123deg, #645BEB 12%, rgb(179, 114, 189) 95%);
+
                     }
                 }
             }
