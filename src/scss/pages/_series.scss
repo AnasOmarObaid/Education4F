@@ -123,8 +123,9 @@
 
                 ul {
                     list-style-type: none;
-                    display: flex;
+
                     margin-bottom: .5rem;
+                    display: -webkit-box !important;
 
                     li {
                         color: #fff;
@@ -149,6 +150,7 @@
 
                     a {
                         @include button();
+
                     }
 
                     a:nth-child(1) {
@@ -449,7 +451,8 @@
 
                     ul {
                         list-style-type: none;
-                        display: flex;
+                        display: -webkit-box !important;
+                        ;
                         margin-bottom: .5rem;
 
                         li {
@@ -544,11 +547,11 @@
         }
 
         .mini-wrapper {
-            margin-top: 2rem;
+            margin-top: 1rem;
             display: flex;
             justify-content: space-between;
 
-        
+
             .mini-course {
                 width: 370px;
                 height: 308px;
@@ -664,8 +667,8 @@
                 }
 
                 &:hover {
-
-                    transform: scale(1.3);
+                    transition: all 0.5s ease-in-out;
+                    transform: scale(1.15);
                     z-index: 1000;
 
                     .bottom-information {
@@ -756,7 +759,254 @@
 
     }
 
+    // testing section
+    .testing {
+        @extend .introduction;
+        @extend .new-to-education4f;
+
+        .other-wrapper {
+            max-width: 1166px;
+            margin: auto;
+            background-image: radial-gradient(circle at 0 2%, #25395a, #162031 124%);
+            border-radius: 10px;
+            margin-top: 2rem;
+            padding: 2rem;
+            padding-top: 1rem;
+
+            .content-wrapper {
+                a {
+                    text-decoration: none;
+                    max-width: 400px;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    border-radius: 1.25rem;
+                    padding: 1rem;
+                    display: block;
+                    color: #fff;
+                    margin-top: 1rem;
+                    float: right;
+
+                    .content {
+                        display: flex;
+                        align-items: center;
+
+                        .image-area {
+
+                            margin-right: 1.5rem;
+
+                            img {
+                                max-width: 76px;
+                                max-height: 76px
+                            }
+                        }
+
+                        .information {
+
+
+                            h5 {
+
+                                font-size: .9rem;
+                                font-weight: 500;
+
+                            }
+
+                            p {
+                                margin-top: .5rem;
+                                opacity: .7;
+                                font-size: .7rem;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, .2);
+                        transition: all 0.3s ease-in-out;
+                    }
+
+
+                }
+
+                .col-md-6:nth-child(even) {
+                    a {
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+
+    // learn tooling 
+    .language {
+        @extend .learn-tool;
+    }
+
+    // random series
+    .random {
+        @extend .introduction;
+        @extend .recently-updated;
+    }
+
+    // frameworks section
+    .frameworks {
+        @extend .testing;
+    }
+
+    .techniques {
+        @extend .language;
+    }
+
+    // Trending Series
+    .trending {
+        @extend .frameworks;
+
+        .other-wrapper {
+            margin-top: 1rem;
+        }
+    }
+
+    // topic categories 
+    .topic-categories {
+        @extend .introduction;
+
+        .content-area {
+
+            background-image: radial-gradient(circle at 0 2%,#25395a,#162031 124%);
+            margin-top: 1.5rem;
+            padding: .5rem 0 2.5rem 0;
+            // new nav
+            .new-nav {
+                margin-top: 2rem;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 70%;
+                    margin: auto;
+
+                    // Extra small devices (phones, 768px and down)
+                    @media only screen and (max-width: 768px) {
+                        overflow-x: scroll;
+                        width: auto;
+                    }
+
+                    li {
+
+                        // Extra small devices (phones, 768px and down)
+                        @media only screen and (max-width: 768px) {
+                            width: 100px;
+                            margin-right: 1rem;
+                        }
+
+                        a {
+                            font-size: .9rem;
+                            opacity: .6;
+                            text-decoration: none;
+                            color: #fff;
+
+
+                            &:hover {
+                                opacity: 1;
+                                font-weight: bolder;
+                                color: #ffffff;
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // topics
+            .all-topics {
+                margin-top: 1.5rem;
+
+                .box {
+                    margin-top: 1rem;
+                    height: 84px;
+                    background-color: rgba(50, 138, 241, .03);
+                    padding-bottom: 0.25rem;
+                    padding-top: 0.25rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    color: #000;
+                    overflow: hidden;
+                    align-items: center;
+                    justify-content: space-around;
+                    border-width: 1px;
+                    border: 1px solid;
+                    border-color: #223453;
+                    width: 100%;
+                    overflow: hidden;
+                    display: inline-block;
+
+                    // phone screen 
+                    @media only screen and (max-width: 768px) {
+                        width: 85%;
+                        margin: auto;
+                        margin-bottom: 1rem;
+                    }
+
+                    .image-area {
+                        img {
+                            max-width: 50px;
+                            max-height: 50px;
+                        }
+                    }
+
+                    .content {
+
+                        // Extra small devices (phones, 768px and down)
+                        @media only screen and (max-width: 768px) {
+                            text-align: center;
+                            width: 70%;
+                        }
+
+                        span {
+                            color: rgb(255, 255, 255);
+                            font-weight: bold;
+                            line-height: 1.25;
+                            font-size: .9rem;
+                            text-align: left;
+                            opacity: .9;
+
+                            // phone screen 
+                            @media only screen and (max-width: 768px) {
+                                font-size: .8rem;
+                            }
+                        }
+
+                        .info {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: .5rem;
+
+
+                            small {
+                                font-size: .6rem;
+                                opacity: .9;
+                                color: #fff;
+                            }
+
+                            // Extra small devices (phones, 768px and down)
+                            @media only screen and (max-width: 768px) {
+                                justify-content: space-around;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        border-color: rgba(50, 138, 241, .2);
+                        transition: all 0.4s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
 
     // footer
     @import 'pages/footer';
+
+    .footer {
+        margin-top: 0 !important;
+    }
 }
