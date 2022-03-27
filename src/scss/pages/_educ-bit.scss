@@ -1,0 +1,285 @@
+// navigation
+@import 'pages/nav';
+
+$max-width: 1166px;
+$margin: auto;
+
+.educ-bit {
+    overflow: hidden;
+    max-width: 100vw;
+
+    // navigation
+    nav {
+        background-image: radial-gradient(circle at 0 2%, #283e63, #172337 99%);
+        height: 50vh;
+        align-items: start;
+        padding-top: 1.5rem;
+        z-index: 5 !important;
+
+        .navbar-collapse {
+
+            //justify-content: center;
+            ul {
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+
+                li {
+                    a {
+                        font-size: .9rem;
+                        opacity: .6;
+
+                        &:hover {
+                            opacity: 1;
+                            font-weight: bolder;
+                            color: #ffffff;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // section header class
+    .section-header {
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: .5px;
+        font-size: 2.2rem;
+        margin-top: 5rem;
+    }
+
+    // section paragraph
+    .section-paragraph {
+        font-size: .9rem;
+        text-align: center;
+        margin: auto;
+        color: #3f3e3e;
+        letter-spacing: .9px;
+        line-height: 2rem;
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+
+    // span for give color
+    .span {
+        font-weight: bold;
+        color: #645beb;
+    }
+
+    // course body
+    .course {
+        //todo
+    }
+
+    // introduction section
+    .introduction {
+
+        position: relative;
+        top: -25.5rem;
+        right: 0;
+        left: 0;
+        z-index: 99999 !important;
+        max-width: $max-width;
+        margin: auto;
+        overflow: hidden;
+
+        .section-heading {
+            @extend .section-header;
+            color: #fff !important;
+            font-weight: bold;
+        }
+
+        .section-paragraph {
+            @extend .section-paragraph;
+            color: #fff !important;
+            margin-bottom: 1.5rem;
+        }
+
+        .introduction-course {
+            background: linear-gradient(270deg, #21c8f6, #637bff);
+
+            border-radius: 10px;
+            margin: auto;
+
+            .wrapper {
+                display: flex;
+                width: 100%;
+                height: 100%;
+
+                aside {
+                    background-color: rgba(0, 0, 0, 0.05);
+                    border-radius: 0.25rem !important;
+                    padding: 1.3rem .85rem;
+
+                    .image-area {
+                        max-width: 160px;
+                        max-height: 160px;
+
+                        img {
+                            width: 100%;
+                            max-height: 160px;
+                            border-radius: 0.25rem !important;
+                        }
+                    }
+
+                    .content {
+                        margin-top: 0.85rem;
+                        padding: 0 0.6rem;
+
+                        small {
+                            display: block;
+                            color: hsla(0, 0%, 100%, .95);
+                            font-family: 600;
+                            letter-spacing: -.02rem;
+                            font-size: .8rem;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: .95rem;
+
+                            &:hover {
+                                text-decoration: underline;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                }
+
+                .content-area {
+                    padding: 1.3rem .85rem;
+                    overflow: hidden;
+                    position: relative;
+
+                    h3 {
+                        margin-bottom: 2.5rem;
+
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                            font-weight: bold;
+                            letter-spacing: .5px;
+                            font-size: 1.8rem;
+
+                            &:hover {
+                                text-decoration: underline !important;
+                            }
+
+                        }
+                    }
+
+                    p {
+                        color: #fff;
+                        opacity: .9;
+
+                        font-weight: 400;
+                        font-size: .95rem;
+
+                    }
+
+                    .bottom-information {
+                        position: absolute;
+                        bottom: 0;
+                        padding-bottom: 1.5rem;
+                        width: 100%;
+                        overflow: hidden;
+
+                        .buttons {
+                            a {
+                                @include button();
+                            }
+
+                            a:nth-child(1) {
+                                background-color: #ffffff;
+                                color: rgb(0, 0, 0);
+                                border-color: #645BEB;
+                                padding-left: 1.5rem;
+                                padding-right: 1.5rem;
+                                border-radius: 17px;
+                                font-size: .8rem;
+
+                                &:hover {
+                                    background-color: #645BEB;
+                                    color: #fff;
+                                    border-color: #ffffff;
+
+                                    transition: all 0.3s ease-in-out;
+                                }
+                            }
+
+                            a:nth-child(2) {
+                                background-color: #645BEB;
+                                color: rgb(255, 255, 255);
+                                border: 1px solid;
+                                border-color: rgba(50, 138, 241, .1);
+                                padding-left: 1.5rem;
+                                padding-right: 1.5rem;
+                                border-radius: 17px;
+                                font-size: .8rem;
+
+                                &:hover {
+                                    background-color: #ffffff;
+                                    color: #645BEB;
+                                    border-color: #645BEB;
+
+                                    transition: all 0.3s ease-in-out;
+                                }
+
+
+                            }
+                        }
+
+                        hr {
+                            color: #fff;
+                            margin: 1.5rem 0 1rem 0;
+                            width: 95%;
+                        }
+
+                        .tech {
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: .685rem;
+                            font-weight: bold;
+                            letter-spacing: .5px;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        .cat {
+                            @include button();
+                            padding: 5px 20px 5px 20px;
+                            letter-spacing: 1.3px;
+                            border-radius: 5px;
+                            font-size: 14px;
+                            float: right;
+                            margin-right: 2.75rem;
+                            background-color: #ffffff;
+                            color: #fff;
+                            border-radius: 17px;
+                            font-size: .55rem;
+                            background-color: inherit;
+                            border-color: #ffffff;
+                            font-weight: bold;
+
+                            &:hover {
+                                background-color: #645BEB;
+                                color: #fff;
+
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // footer
+    @import 'pages/footer';
+}
