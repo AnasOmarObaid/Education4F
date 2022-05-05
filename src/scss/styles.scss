@@ -9,7 +9,7 @@
 // import mixin functions
 @import 'mixins/forms';
 @import 'mixins/buttons';
-
+@import 'mixins/comments';
 
 // import my pages
 @import 'pages/login';
@@ -24,3 +24,6 @@
 @import 'pages/topics';
 @import 'pages/series';
 @import 'pages/educ-bit';
+@import 'pages/blog'; 
+@import 'pages/show-blog'; 
+@import 'pages/search';

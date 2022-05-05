@@ -46,7 +46,6 @@ gulp.task('bootstrap', () => {
 // js task
 gulp.task('js', () => {
     return gulp.src('src/js/**/*.js')
-        .pipe(uglify())
         .pipe(rename('main.min.js'))
         .pipe(gulp.dest('dest/js'))
 });

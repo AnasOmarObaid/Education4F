@@ -1,0 +1,147 @@
+@mixin comment {
+
+    position: relative;
+    min-height: 140px;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: rgba(100, 91, 235, .3);
+    border-width: 2px;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    padding-bottom: .5rem;
+
+    &:hover {
+        border-color: rgba(100, 91, 235, .6);
+    }
+
+
+    .image {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            margin-bottom: .65rem;
+        }
+
+        span {
+            font-size: .55rem;
+            letter-spacing: .55px;
+        }
+    }
+
+    .information {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        .upper {
+            h3 {
+                font-size: .95rem;
+                margin-bottom: -.3rem;
+                font-weight: bold;
+            }
+
+            small {
+                font-size: .55rem;
+                letter-spacing: .55px;
+            }
+
+            p {
+                margin-top: .35rem;
+                font-size: .95rem;
+                margin-bottom: 0;
+                font-weight: 400;
+            }
+        }
+
+        .lower {
+            align-self: flex-end;
+
+            .buttons {
+                display: flex;
+
+                form {
+                    button {
+                        @include button();
+                        background: #f7f8fc;
+                        padding: 5px 15px 5px 15px;
+                        border-radius: 12px;
+                        transition: all 0.3s ease-in-out;
+
+                        .hea {
+                            font-size: 1rem;
+                            color: #938e8e;
+                        }
+
+                        &:hover {
+                            background: #e1e1e1;
+                        }
+                    }
+                }
+
+                .replay-btn {
+                    @include button();
+                    background: #f7f8fc;
+                    padding: 5px 15px 5px 15px;
+                    border-radius: 12px;
+                    transition: all 0.3s ease-in-out;
+                    border: 1px solid;
+
+                    &:hover {
+                        background: #e1e1e1;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .actions {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        display: flex;
+        align-items: center;
+
+        .edit-btn {
+            @include button();
+            padding: 5px 10px 5px 11px;
+            font-size: 12px;
+            line-height: unset;
+            letter-spacing: .8px;
+            background: #198754;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+            margin-right: .5rem;
+
+            &:hover {
+                background: #11c170;
+                border: 1px solid #11c170;
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        form {
+            .delete-btn {
+                @include button();
+                padding: 5px 10px 5px 11px;
+                font-size: 12px;
+                line-height: unset;
+                letter-spacing: .8px;
+                background: #d34418;
+                color: #fff;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background: #ff3b00;
+                    border: 1px solid #ff3b00;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}
