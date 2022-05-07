@@ -1,0 +1,58 @@
+@mixin teacher-box {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.934rem;
+    border-width: 1px;
+    border: 1px solid;
+    border-color: #ddd;
+    position: relative;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .teacher-name {
+            h5 {
+                font-size: .85rem;
+                font-weight: bold;
+                letter-spacing: .85px;
+                margin-bottom: 0;
+            }
+        }
+
+        .teacher-media {
+            .icon {
+                color: #727070;
+                font-size: 1.2rem;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                margin-left: 5px;
+
+                &:hover {
+                    opacity: .9;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+
+        .image {
+            margin-right: 1rem;
+
+            img {
+                border-radius: 50%;
+                border: 3px solid;
+                border-color: #f0466c;
+            }
+        }
+
+        p{
+            font-size: .9rem;
+        }
+    }
+}

@@ -10,6 +10,7 @@
 @import 'mixins/forms';
 @import 'mixins/buttons';
 @import 'mixins/comments';
+@import 'mixins/box';
 
 // import my pages
 @import 'pages/login';
@@ -27,3 +28,4 @@
 @import 'pages/blog'; 
 @import 'pages/show-blog'; 
 @import 'pages/search';
+@import 'pages/series-title';
