@@ -51,8 +51,73 @@
             }
         }
 
-        p{
+        p {
             font-size: .9rem;
         }
+    }
+}
+
+
+@mixin comment-form {
+    border: 1px solid;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    border-radius: 0.75rem;
+    padding: 1rem;
+
+
+    .participate {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: .8rem;
+        }
+
+        h2 {
+            font-size: .95rem;
+            margin-bottom: 0;
+
+        }
+    }
+
+    form {
+        textarea {
+            height: 120px;
+            width: 100%;
+            background: inherit;
+            border: none;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        label {
+            font-size: .75rem;
+            color: #4e4e4e;
+        }
+
+        .button {
+            text-align: end;
+
+            button {
+                @include submit($background-color: #645beb);
+                transition: all 0.3s ease-in-out;
+                font-size: .95rem;
+
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                    border: 1px solid #645beb;
+                }
+
+            }
+
+            .close {
+                @include submit($background-color: #dd331c);
+            }
+        }
+
     }
 }
